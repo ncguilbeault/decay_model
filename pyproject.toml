@@ -2,6 +2,7 @@
 name = "decay-model"
 version = "0.1.0"
 requires-python = ">=3.12"
+path = "src"
 dependencies = [
     "fastprogress>=1.1.5",
     "h5py>=3.15.1",
@@ -23,3 +24,7 @@ dependencies = [
 
 [tool.uv.sources]
 spike-detection = { path = "../spike-detection" }
+
+[build-system]
+requires = ["uv_build>=0.10.7,<0.11.0"]
+build-backend = "uv_build"
