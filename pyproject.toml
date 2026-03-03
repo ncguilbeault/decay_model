@@ -1,0 +1,25 @@
+[project]
+name = "decay-model"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "fastprogress>=1.1.5",
+    "h5py>=3.15.1",
+    "ipykernel>=7.1.0",
+    "matplotlib>=3.10.8",
+    "mearec>=1.9.2",
+    "numpy==2.2.*",
+    "open-ephys-python-tools==0.1.12",
+    "scikit-learn>=1.8.0",
+    "setuptools>=80.10.2",
+    "spike-detection",
+    "spikecomparison>=0.3.3",
+    "spikeextractors>=0.9.11",
+    "spiketoolkit>=0.7.7",
+    "torch>=2.10.0",
+    "torchvision>=0.25.0",
+    "zarr==2.18.*",
+]
+
+[tool.uv.sources]
+spike-detection = { path = "../spike-detection" }
